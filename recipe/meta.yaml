@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/predictNMB_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/predictNMB/predictNMB_{{ version }}.tar.gz
-  sha256: 138c81d9fd17bbbc2b2cd2b6a49666d9b55a6c8fb8642d0d17508d16c48c101a
+  sha256: fe5d648e53048c28aef167bb85598cbfc02acdfa805e331b4c3ae661cd5495bc
 
 build:
   merge_build_host: true  # [win]
