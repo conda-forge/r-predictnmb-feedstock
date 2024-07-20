@@ -1,6 +1,5 @@
 {% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-predictnmb
@@ -13,8 +12,7 @@ source:
   sha256: fe5d648e53048c28aef167bb85598cbfc02acdfa805e331b4c3ae661cd5495bc
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
